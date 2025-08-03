@@ -7,6 +7,11 @@ THis script searches in either the folder it is in, or a user entered folder for
 it then lists the sh files that do not contain the patch required to make them run under wayland, and allows you to select what files to patch.  
 the patch itself defines the the SDL videodriver to be xwayland, allowing renpy's default linux.sh to work under wayland enviroments 
 
+![example1](Examples/path.png)
+![example2](Examples/screen.png)
+![example3](Examples/suck_seed.png)
+
+
 
 ## Requirements
 This program just needs "Zenity" to work properly. most distros come with this pre-installed, otherwise to install it:
