@@ -1,5 +1,12 @@
 # RenPy-Wayland-Patcher
-A simple GUI script for automatically adding the line "export SDL_VIDEODRIVER=x11" to the linux version of renpy games that they require to work under wayland
+A simple GUI script for automatically adding the line "export SDL_VIDEODRIVER=x11" to the linux version of renpy games that they require to work under wayland  
+
+## What it does
+
+THis script searches in either the folder it is in, or a user entered folder for .sh files of Ren'py games.  
+it then lists the sh files that do not contain the patch required to make them run under wayland, and allows you to select what files to patch.  
+the patch itself defines the the SDL videodriver to be xwayland, allowing renpy's default linux.sh to work under wayland enviroments 
+
 
 ## Requirements
 This program just needs "Zenity" to work properly. most distros come with this pre-installed, otherwise to install it:
@@ -24,13 +31,3 @@ do `chmod +x Wayland_Fixer.sh`
 ## Usage
 Just place the .sh file in the folder you keep all your games in, and run it  
 alternatively, you can also just run it from anywhere and select your game folder
-
-### Note
-This script assumes you have all your renpy games in folders, under one games folder. if you dont, just make one I guess `¯\_(ツ)_/¯`  
-This script also assumes that your RenPy games include the .sh executable in the main game folder, and not in a subdirectory.  
-for example  
-`~/games/NAME/NAME.sh` with `games` being the folder with all other renpy games.  
-**THIS WILL NOT WORK IF**  
-your game is in another folder in your game folder. for example, `~/games/NAME/linux/NAME.sh`  
-I did this to avoid adding the patch to other random .sh files, potentally breaking them. but I can change that if enough people want me to
-
