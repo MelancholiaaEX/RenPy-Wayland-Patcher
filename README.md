@@ -31,7 +31,7 @@ This program just needs "Zenity" to work properly. most distros come with this p
 
 ### if you do download it as a Zip
 extract it  
-do `chmod +x Wayland_Fixer.sh`
+do `chmod +x RenPyPatcher.sh`
 
 ## Usage
 Just place the .sh file in the folder you keep all your games in, and run it  
